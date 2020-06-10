@@ -1,0 +1,491 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+//Extra large: ≥1200px
+@include media-breakpoint-down(xl) {}
+
+//Large: ≥992px
+@include media-breakpoint-down(lg) {}
+
+//Medium: ≥768px
+@include media-breakpoint-down(md) {
+	body {
+		font-size: 16px;
+	}
+	.container {
+	    width: 100%;
+	    max-width: 320px;
+	    padding: 0 10px;
+	}
+	.modal {
+		display: none;
+	}
+	.h {
+		height: 60px;
+		&-link {
+			font-size: 24px;
+			width: 100%;
+			line-height: 40px;
+		}
+	}
+	.br-mobile {
+		display: none;
+	}
+	.form {
+		&-title {
+			font-size: 24px;
+		}
+		&-new {
+			font-size: 24px;
+		}
+		&-submit {
+			font-size: 24px;
+			padding: 9px 12px;
+			border-radius: 15px;
+		}
+	}
+    .mobile-hidden-important {
+        display: none !important;
+      }
+    
+    .fourth .bx, .seventh .bx, .tenth .bx, .thirteenth .bx{
+          &-custom {
+            position: relative;
+          }
+          &-controls-direction a {
+            position: absolute;
+            top: 50%;
+            margin-top: -8px;
+            outline: 0;
+            width: 10px;
+            height: 10px;
+            text-indent: -9999px;
+            z-index: 2;
+            transform: rotateZ(45deg);
+          }
+
+          &-next {
+            right: 10px;
+            border-right: 2px solid lightgrey;
+            border-top: 2px solid lightgrey;
+          }
+          &-prev {
+            left: 10px;
+            border-left: 2px solid lightgrey;
+            border-bottom: 2px solid lightgrey;
+          }
+
+    }
+    .first { 
+        &:before {
+            background-size: cover;
+            height: 100%;
+        }
+        &-title {
+            font-size: 24px;
+        }
+        &-description {
+            font-size: 18px;
+            padding-bottom: 20px;
+        }
+        &-saletext {
+            display: none;
+        }
+        &-left {
+            width: 100%;
+        }
+        &-right {
+            width: 100%;
+            &:before {
+                top: -40px;
+                left: 0px;
+                background-size: 50%;
+            }
+            &:after {
+                background-size: 70%;
+                background-repeat: no-repeat;
+                bottom: 440px;
+                left: 90px;
+            }
+        }
+        &-item {
+            padding-left: 85px;
+            font-size: 16px;
+            height: 100%;
+            padding-bottom: 30px;
+        }
+        &-secure {
+            margin-left: 0;
+            &:after {
+                right:-50px;
+                top:10px;
+            }
+        }
+    }
+    .form {
+        margin-top: 300px;
+        margin-left: 0;
+        &-submit {
+            font-size: 16px;
+        }
+    }
+    .second {
+        padding-bottom: 30px;
+        &-title {
+            font-size: 24px;
+            width: 100%;
+        }
+        &-left {
+            width: 100%;
+            height: 300px;
+            &:before {
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-size: 100%;
+            }
+        }
+        &-right {
+            padding-top: 20px;
+            width: 100%;
+            &_title {
+                font-size: 24px;
+            }
+        }
+        &-item {
+            padding: 15px 0 15px 65px;
+        }
+    }
+    .third {
+        margin-top: 0;
+        padding-top: 40px;
+        width: 100%;
+        padding-bottom: 60px;
+        overflow-x: hidden;
+        &-text {
+            width: 100%;
+        }
+        &:before {
+            height: 114%;
+            background-size: cover;
+            top: -110px;
+        }
+        &:after {
+            display: none;
+        }
+        &-title {
+            width: 100%;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    }
+    .test {
+        width: 100%;
+        &-title {
+            width: 100%;
+            font-size: 16px;
+            margin-bottom: 50px;
+        }
+        &-option {
+            font-size: 16px;
+        }
+    }
+    .fourth {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        margin-top: 0;
+        &:before {
+            height: 135%;
+            background-size: cover;
+            top: -90px;
+        }
+        &-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        &-list {
+            margin-left: 0;
+        }
+        &-item {
+            
+        }
+        .bx{
+          &-controls-direction a {
+            top: 70%;
+          }
+
+    }
+    }
+    
+    
+    .fifth {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        .tmp-divider {
+            font-size: 24px;
+            width: 100%;
+        }
+        .toSlider {
+            &-item {
+                &--title {
+                    font-size: 20px;
+                    &_mini {
+                        display: block;
+                        font-size: 18px;
+                    }
+                }
+                &--text {
+                    width: 240px;
+                    font-size: 16px;
+                }
+                
+            }
+        }
+    }
+    .sixth {
+        padding-top: 40px;
+        &:before {
+            height: 125%;
+            background-size: cover;
+            top: -240px;
+        }
+        &-left {
+            margin-top: 0;
+            margin-right: 0;
+        }
+        &-right {
+            width: 100%;
+            margin-top: 40px;
+            &:after {
+                left: 90px;
+                bottom: 235px;
+                background-size: 70%;
+                background-repeat: no-repeat;
+            }
+            &:before {
+                background-size: 50%;
+                left: 0px;
+                top: -30px;
+            }
+        }
+        &-secure:after {
+            right:-60px;
+        }
+    }
+    .seventh {
+        padding-top: 40px;
+        &:before {
+            height: 115%;
+            background-size: cover;
+            top: -60px;
+        }
+        &-title {
+            font-size: 24px;
+        }
+        &-result {
+            
+        }
+        &-item {
+            height: 400px;
+            padding: 100px 30px 10px 30px;
+            margin-left: 20px;
+            margin-top: 0;
+            &--left {
+            }
+            &--right {
+                background-position: 0 15px;
+            }
+        }
+        &-text {
+            font-size: 14px;
+        }
+        &-effect {
+            font-size: 12px;
+        }
+        &-percent, &-value {
+            font-size: 24px;
+        }
+    }
+    .eighth {
+        &-title {
+            font-size: 24px;
+            width: 100%;
+        }
+        &-left {
+            margin: 0;
+            &:after {
+                width: 90%;
+                background-size: 100%;
+                left: 125px;
+                background-repeat: no-repeat;
+                top: 50px;
+            }
+        }
+        &-img {
+            margin-top: 20px;
+            width: 70%;
+            
+        }
+        &-right {
+            width: 100%;
+        }
+        &-list {
+            margin-top: 90px;
+        }
+        &-item {
+            display: inline-block;
+            padding-bottom: 20px;
+            
+
+        }
+        &-inner {
+            padding: 0;
+            height: 100%;
+            padding-left: 10px;
+            &--1 {
+                border-left: 2px solid #cfd532;
+            }
+            &--2{
+                border-left: 2px solid #80b13d;
+
+            }
+            &--3 {
+                border-left: 2px solid #539358
+            }
+            &--4 {
+                border-left: 2px solid #7dbcbd
+
+            }
+            &--5 {
+                border-left: 2px solid #7dbcdf
+            }
+        }
+    }
+    .tenth {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        &-title {
+            font-size: 24px;
+            width: 100%;
+        }
+        &-item {
+            padding: 0;
+            padding-top: 133px;
+            border: none;
+            margin-top: 0;
+            &:after {
+                display: none;
+            }
+            &:before {
+                left: 84px;
+                top: 0;
+            }
+            &--2{
+                margin: 0;
+            }
+        }
+        &-text {
+            padding: 20px;
+        }
+    }
+    
+    .eleventh {
+        &:after {
+            background-image: url(../img/bg-11m.png);
+            background-size: cover;
+            height: 115%;
+            top: -120px;
+        }
+        &-title {
+            font-size: 24px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .review {
+            width: 100%;
+            padding: 10px 30px;
+            &-text {
+                font-size: 14px;
+            }
+            & .bx {
+        
+              &-next {
+                  right: -25px;
+
+              }
+              &-prev {
+                left: -25px;
+
+              }
+            }
+        }
+    }
+    .thirteenth {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        &-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+         
+        &-slider .bx{
+            &-controls-direction a {
+                top: 70%;
+            }
+        }
+        &-gallery {
+            margin-top: 20px;
+        }
+        &-certificate {
+            margin-right: 0;
+            background-position: 50% 0;
+        }
+        
+    }
+    .fourteenth {
+        .fourth-title {
+            width: 100%;
+        }
+    }
+    .fifteenth {
+        padding-top: 40px;
+        &:before {
+            top: -200px;
+            height: 120%;
+            background-size: cover;
+        }
+        .first-right:after {
+            bottom: 360px;
+        }
+    }
+
+}
+
+
+//Small: ≥576px
+@include media-breakpoint-down(sm) {}
+
+//Extra small: >0
+@include media-breakpoint-down(xs) {}
+
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
+@include media-breakpoint-up(xs) {}
+
+//Small: ≤576px
+@include media-breakpoint-up(sm) {}
+
+//Medium: ≤768px
+@include media-breakpoint-up(md) {}
+
+//Large: ≤992px
+@include media-breakpoint-up(lg) {}
+
+//Extra large: ≤1200px
+@include media-breakpoint-up(xl) {}
